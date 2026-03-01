@@ -56,8 +56,8 @@ body {
 
 /* Garante separação visual real entre blocos, inclusive com fundos iguais */
 main > .section-spacing + .section-spacing {
-  margin-top: 10rem;
-  border-top: 1px solid #e2eef7;
+  margin-top: 1.75rem;
+  border-top: 10px solid #e2eef7;
 }
 
 .hero {
