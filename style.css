@@ -66,13 +66,13 @@ body {
 
 .section-title {
   font-weight: 700;
-  margin-bottom: 0.75rem;
+  margin-bottom: 3rem;
   color: var(--color-accent-dark);
 }
 
 .section-description {
   max-width: 620px;
-  margin-bottom: 0;
+  margin-bottom: 3;
 }
 
 .btn-primary {
