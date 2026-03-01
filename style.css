@@ -19,6 +19,7 @@ body {
   padding-top: var(--header-height);
 }
 
+/* Acessibilidade: link "pular para conteúdo" */
 .skip-link {
   position: absolute;
   left: -9999px;
@@ -28,14 +29,17 @@ body {
   padding: 0.75rem 1rem;
   z-index: 2000;
 }
-
 .skip-link:focus {
   left: 1rem;
   top: 1rem;
 }
 
+/* Navbar */
 .navbar {
   min-height: var(--header-height);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
 }
 
 .navbar-brand,
@@ -49,19 +53,21 @@ body {
   text-decoration: underline;
 }
 
+/* Seções */
 .section-spacing {
   padding: 5.5rem 0;
   scroll-margin-top: calc(var(--header-height) + 1.5rem);
 }
 
-/* Garante separação visual real entre blocos, inclusive com fundos iguais */
+/* Espaço real entre seções (ajuste aqui se quiser mais/menos distância) */
 main > .section-spacing + .section-spacing {
   margin-top: 3rem;
   border-top: 1px solid #e2eef7;
 }
 
+/* Hero (deixe sem section-spacing no HTML, apenas class="hero") */
 .hero {
-  padding-top: 6rem;
+  padding-top: calc(var(--header-height) + 2rem);
   padding-bottom: 5rem;
 }
 
@@ -76,17 +82,18 @@ main > .section-spacing + .section-spacing {
   margin-bottom: 0;
 }
 
+/* Botões */
 .btn-primary {
   background-color: var(--color-accent);
   border-color: var(--color-accent);
 }
-
 .btn-primary:hover,
 .btn-primary:focus-visible {
   background-color: var(--color-accent-dark);
   border-color: var(--color-accent-dark);
 }
 
+/* Cards de serviços */
 .service-card {
   border: none;
   border-radius: 1rem;
@@ -98,6 +105,7 @@ main > .section-spacing + .section-spacing {
   font-size: 1.5rem;
 }
 
+/* Blocos de contato */
 .contact-box {
   background: #fff;
   border: 1px solid #dbeaf5;
@@ -105,11 +113,14 @@ main > .section-spacing + .section-spacing {
   padding: 1.25rem;
 }
 
+/* Mapa */
 .map-wrapper iframe {
   width: 100%;
   min-height: 340px;
+  display: block;
 }
 
+/* WhatsApp botão flutuante */
 .whatsapp-fab {
   position: fixed;
   right: 1rem;
@@ -125,29 +136,30 @@ main > .section-spacing + .section-spacing {
   color: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   z-index: 1050;
+  transition: transform 0.2s ease;
 }
-
 .whatsapp-fab:hover,
 .whatsapp-fab:focus-visible {
   color: #fff;
   transform: scale(1.05);
 }
 
+/* Desktop */
 @media (min-width: 992px) {
   :root {
     --header-height: 72px;
   }
 
   .section-spacing {
-    padding: 60rem 0;
+    padding: 7.5rem 0;
   }
 
   main > .section-spacing + .section-spacing {
-    margin-top: 40rem;
+    margin-top: 3.5rem;
   }
 
   .hero {
-    padding-top: 60rem;
+    padding-top: calc(var(--header-height) + 2.5rem);
     padding-bottom: 6rem;
   }
 }
