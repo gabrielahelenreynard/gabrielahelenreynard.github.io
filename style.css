@@ -11,16 +11,26 @@ html {
   scroll-behavior: smooth;
 }
 
-.hero {
-  padding-top: calc(var(--header-height) + 1.5rem); /* ajuste 1rem ~ 2.5rem */
-}
-
 body {
   font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
   padding-top: var(--header-height);
+}
+
+/* HERO CORRIGIDO */
+.hero {
+  padding-top: calc(var(--header-height) + 1.5rem);
+  padding-bottom: 5rem;
+}
+
+/* Navbar com fundo sólido elegante */
+.navbar {
+  min-height: var(--header-height);
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
 }
 
 .skip-link {
@@ -36,10 +46,6 @@ body {
 .skip-link:focus {
   left: 1rem;
   top: 1rem;
-}
-
-.navbar {
-  min-height: var(--header-height);
 }
 
 .navbar-brand,
@@ -58,14 +64,8 @@ body {
   scroll-margin-top: calc(var(--header-height) + 1.5rem);
 }
 
-/* Evita sensação de seções "coladas" */
 .section-spacing + .section-spacing {
   padding-top: 6.5rem;
-}
-
-.hero {
-  padding-top: 3rem;
-  padding-bottom: 5rem;
 }
 
 .section-title {
@@ -113,6 +113,7 @@ body {
   min-height: 340px;
 }
 
+/* WhatsApp botão flutuante */
 .whatsapp-fab {
   position: fixed;
   right: 1rem;
@@ -128,6 +129,7 @@ body {
   color: #fff;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   z-index: 1050;
+  transition: 0.2s ease;
 }
 
 .whatsapp-fab:hover,
@@ -136,6 +138,7 @@ body {
   transform: scale(1.05);
 }
 
+/* Desktop */
 @media (min-width: 992px) {
   :root {
     --header-height: 72px;
@@ -150,7 +153,7 @@ body {
   }
 
   .hero {
-    padding-top: 3.75rem;
+    padding-top: calc(var(--header-height) + 2rem);
     padding-bottom: 6rem;
   }
 }
