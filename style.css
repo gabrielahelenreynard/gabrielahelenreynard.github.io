@@ -4,7 +4,7 @@
   --color-accent-dark: #2b7cb0;
   --color-muted: #f3f9fd;
   --color-text: #1f2d3d;
-  --header-height: 72px;
+  --header-height: 64px;
 }
 
 html {
@@ -16,6 +16,7 @@ body {
   color: var(--color-text);
   background: var(--color-bg);
   line-height: 1.6;
+  padding-top: var(--header-height);
 }
 
 .skip-link {
@@ -54,7 +55,7 @@ body {
 }
 
 .hero {
-  padding-top: calc(5rem + var(--header-height));
+  padding-top: 2.25rem;
 }
 
 .section-title {
@@ -126,7 +127,15 @@ body {
 }
 
 @media (min-width: 992px) {
+  :root {
+    --header-height: 72px;
+  }
+
   .section-spacing {
     padding: 6rem 0;
+  }
+
+  .hero {
+    padding-top: 3rem;
   }
 }
