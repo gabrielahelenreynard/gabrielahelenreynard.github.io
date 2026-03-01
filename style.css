@@ -1,0 +1,132 @@
+:root {
+  --color-bg: #ffffff;
+  --color-accent: #53a8dd;
+  --color-accent-dark: #2b7cb0;
+  --color-muted: #f3f9fd;
+  --color-text: #1f2d3d;
+  --header-height: 72px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg);
+  line-height: 1.6;
+}
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background: var(--color-accent-dark);
+  color: #fff;
+  padding: 0.75rem 1rem;
+  z-index: 2000;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+.navbar {
+  min-height: var(--header-height);
+}
+
+.navbar-brand,
+.nav-link,
+.text-accent {
+  color: var(--color-accent-dark) !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.section-spacing {
+  padding: 5rem 0;
+  scroll-margin-top: calc(var(--header-height) + 1rem);
+}
+
+.hero {
+  padding-top: calc(5rem + var(--header-height));
+}
+
+.section-title {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--color-accent-dark);
+}
+
+.section-description {
+  max-width: 620px;
+  margin-bottom: 0;
+}
+
+.btn-primary {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+  background-color: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+}
+
+.service-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: 0 6px 24px rgba(26, 53, 78, 0.08);
+}
+
+.service-icon {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+}
+
+.contact-box {
+  background: #fff;
+  border: 1px solid #dbeaf5;
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  min-height: 340px;
+}
+
+.whatsapp-fab {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  background: #25d366;
+  color: #fff;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+}
+
+.whatsapp-fab:hover,
+.whatsapp-fab:focus-visible {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+@media (min-width: 992px) {
+  .section-spacing {
+    padding: 6rem 0;
+  }
+}
