@@ -143,11 +143,11 @@ main > .section-spacing + .section-spacing {
   }
 
   main > .section-spacing + .section-spacing {
-    margin-top: 2.25rem;
+    margin-top: 4rem;
   }
 
   .hero {
-    padding-top: 3.75rem;
+    padding-top: 6rem;
     padding-bottom: 6rem;
   }
 }
