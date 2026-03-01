@@ -77,12 +77,16 @@ p{ max-width:var(--max-text); }
 /* Imagem do hero (maior e alinhada) */
 .hero-img{
   width:100%;
-  max-width:420px;
+  max-width:380px;   /* antes estava grande */
   height:auto;
   display:block;
   margin-inline:auto;
-  border-radius:var(--radius);
-  box-shadow:var(--shadow);
+  border-radius:18px;
+  box-shadow:0 10px 30px rgba(26,53,78,.10);
+}
+
+@media (min-width: 992px){
+  .hero-img{ max-width:420px; }
 }
 
 /* Botões */
@@ -165,14 +169,14 @@ p{ max-width:var(--max-text); }
 @media (min-width: 992px){
   :root{ --header-height:72px; }
 
-  .section-spacing{ padding:5.75rem 0; }
+  .section-spacing{ padding:5.75rem 3; }
 
   .hero{
-    padding-top:calc(var(--header-height) + 3.25rem);
+    padding-top:calc(var(--header-height) + 4.25rem);
     padding-bottom:4.5rem;
   }
 
   .hero-img{
-    max-width:460px;
+    max-width:420px;
   }
 }
