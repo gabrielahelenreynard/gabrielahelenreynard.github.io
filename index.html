@@ -1,187 +1,292 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-    content="Dra. Gabriela Helen - Cirurgiã Dentista em Campos do Jordão. Atendimento humanizado, prevenção, estética e urgências." />
-  <title>Dra. Gabriela Helen | Cirurgiã Dentista</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Dra. Gabriela Helen - Cirurgiã Dentista em Campos do Jordão. Atendimento humanizado, prevenção, estética e urgências."
+    />
+    <title>Dra. Gabriela Helen | Cirurgiã Dentista</title>
 
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWix+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkR4j8R0Q7Q9Q6V+R1E6rj0M6Q5x8N9+4w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo-principal">Pular para o conteúdo principal</a>
 
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
-
-  <!-- Seu CSS -->
-  <link rel="stylesheet" href="styles.css" />
-</head>
-
-<body>
-
-  <!-- NAVBAR -->
-  <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm">
-      <div class="container">
-        <a class="navbar-brand fw-semibold" href="#inicio">Dra. Gabriela Helen</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#menuPrincipal">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menuPrincipal">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
-            <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main>
-
-    <!-- HERO -->
-    <section id="inicio" class="hero">
-      <div class="container">
-        <div class="row align-items-center g-4 g-lg-5">
-
-          <div class="col-12 col-lg-7">
-            <h1 class="display-5 fw-bold mb-3">Dra. Gabriela Helen</h1>
-            <p class="lead mb-2">Cirurgiã Dentista | CRO159674</p>
-            <p class="mb-4">
-              Atendimento humanizado em Campos do Jordão, com foco em prevenção,
-              estética e bem-estar para toda a família.
-            </p>
-
-            <a class="btn btn-primary btn-lg"
-              href="https://wa.me/5512982741774?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
-              target="_blank">
-              <i class="fa-brands fa-whatsapp me-2"></i>Agendar pelo WhatsApp
-            </a>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top bg-white shadow-sm" aria-label="Navegação principal">
+        <div class="container">
+          <a class="navbar-brand fw-semibold" href="#inicio">Dra. Gabriela Helen</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menuPrincipal"
+            aria-controls="menuPrincipal"
+            aria-expanded="false"
+            aria-label="Alternar navegação"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menuPrincipal">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+              <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+              <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+              <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
+              <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
           </div>
-
-          <div class="col-12 col-lg-5 text-center text-lg-end">
-            <img src="hero.jpg"
-              class="hero-img img-fluid rounded-4 shadow-sm"
-              alt="Retrato profissional da Dra. Gabriela Helen"
-              loading="lazy" />
-          </div>
-
         </div>
-      </div>
-    </section>
+      </nav>
+    </header>
 
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="section-spacing bg-light">
-      <div class="container">
-        <h2 class="section-title">Serviços</h2>
-        <p class="section-description">
-          Tratamentos pensados para saúde, estética e conforto no seu dia a dia.
-        </p>
+    <main id="conteudo-principal">
+      <section id="inicio" class="hero section-spacing">
+        <div class="container">
+          <div class="row align-items-center g-4 g-lg-5">
+            <div class="col-12 col-lg-6 order-1">
+              <p class="text-uppercase fw-semibold mb-2 text-accent">Odontologia com cuidado e confiança</p>
+              <h1 class="display-5 fw-bold mb-3">Dra. Gabriela Helen</h1>
+              <p class="lead mb-2">Cirurgiã Dentista | CRO159674</p>
+              <p class="mb-4">
+                Atendimento humanizado em Campos do Jordão, com foco em prevenção, estética e bem-estar para toda a família.
+              </p>
+              <a
+                class="btn btn-primary btn-lg"
+                href="https://wa.me/5512982741774?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Agendar consulta pelo WhatsApp"
+              >
+                <i class="fa-brands fa-whatsapp me-2" aria-hidden="true"></i>Agendar pelo WhatsApp
+              </a>
+            </div>
+            <div class="col-12 col-lg-6 order-2">
+              <img
+                src="assets/hero.jpg"
+                class="img-fluid rounded-4 shadow-sm"
+                alt="Retrato profissional da Dra. Gabriela Helen em consultório odontológico"
+                loading="lazy"
+              />
+            </div>
+        </div>
+      </section>
 
-        <div class="row g-4 mt-3">
+      <section id="servicos" class="section-spacing bg-light">
+        <div class="container">
+          <h2 class="section-title">Serviços</h2>
+          <p class="section-description">Tratamentos pensados para saúde, estética e conforto no seu dia a dia.</p>
 
-          <!-- Serviço -->
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card service-card h-100">
-              <div class="card-body">
-                <i class="fa-solid fa-tooth service-icon"></i>
-                <h3 class="h5 mt-3">Implantes dentários</h3>
-                <p>Reposição de dentes com planejamento individual.</p>
-              </div>
+          <div class="row g-4 mt-1">
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-screwdriver-wrench service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Implantes dentários</h3>
+                  <p class="mb-0">Reposição de dentes com planejamento individual e foco em função e estética.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-teeth service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Prótese dentária</h3>
+                  <p class="mb-0">Soluções para reabilitação oral com conforto, estabilidade e naturalidade.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-clipboard-check service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Avaliação odontológica</h3>
+                  <p class="mb-0">Diagnóstico completo e plano de tratamento claro para cada necessidade.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-xmark service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Extração dentária</h3>
+                  <p class="mb-0">Procedimentos com técnica, segurança e orientações para recuperação adequada.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-tooth service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Restauração dentária</h3>
+                  <p class="mb-0">Recuperação estética e funcional dos dentes com materiais modernos.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-shield-heart service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Limpeza e profilaxia</h3>
+                  <p class="mb-0">Higienização profissional e prevenção para manter sua saúde bucal em dia.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-staff-snake service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Tratamento de canal</h3>
+                  <p class="mb-0">Alívio da dor e preservação do dente com atendimento cuidadoso.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-sun service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Clareamento dental</h3>
+                  <p class="mb-0">Opções seguras para recuperar o brilho natural do sorriso.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-gem service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Lentes de contato dental</h3>
+                  <p class="mb-0">Correções estéticas com resultado natural e planejamento personalizado.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4">
+              <article class="card h-100 service-card">
+                <div class="card-body">
+                  <i class="fa-solid fa-heart-pulse service-icon" aria-hidden="true"></i>
+                  <h3 class="h5 mt-3">Odontologia preventiva</h3>
+                  <p class="mb-0">Acompanhamento regular para prevenir problemas e manter o sorriso saudável.</p>
+                </div>
+              </article>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card service-card h-100">
-              <div class="card-body">
-                <i class="fa-solid fa-sun service-icon"></i>
-                <h3 class="h5 mt-3">Clareamento dental</h3>
-                <p>Opções seguras para recuperar o brilho natural do sorriso.</p>
-              </div>
+      <section id="sobre" class="section-spacing">
+        <div class="container">
+          <h2 class="section-title">Sobre</h2>
+          <div class="row g-4 align-items-start">
+            <div class="col-12 col-lg-8">
+              <p>
+                A <strong>Dra. Gabriela Helen</strong> é <strong>Cirurgiã Dentista | CRO159674</strong>, dedicada a oferecer
+                um atendimento próximo, respeitoso e com foco no conforto do paciente.
+              </p>
+              <p class="mb-0">
+                Com abordagem humanizada, busca unir técnica e cuidado em cada consulta, explicando cada etapa do tratamento
+                de forma clara para que você tenha segurança nas decisões sobre sua saúde bucal.
+              </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div class="col-12 col-md-6 col-xl-4">
-            <div class="card service-card h-100">
-              <div class="card-body">
-                <i class="fa-solid fa-gem service-icon"></i>
-                <h3 class="h5 mt-3">Lentes de contato dental</h3>
-                <p>Correções estéticas com resultado natural.</p>
+      <section id="local" class="section-spacing bg-light">
+        <div class="container">
+          <h2 class="section-title">Local</h2>
+          <p class="mb-3">
+            <strong>Endereço:</strong> R. Inácio Caetano, 480 - Sala 206, Campos do Jordão - SP, 12467-054
+          </p>
+          <div class="map-wrapper rounded-4 overflow-hidden shadow-sm">
+            <iframe
+              title="Mapa do consultório da Dra. Gabriela Helen"
+              src="https://www.google.com/maps?q=R.%20In%C3%A1cio%20Caetano%2C%20480%20-%20Sala%20206%2C%20Campos%20do%20Jord%C3%A3o%20-%20SP%2C%2012467-054&output=embed"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="section-spacing">
+        <div class="container">
+          <h2 class="section-title">Contato</h2>
+          <div class="row g-4">
+            <div class="col-12 col-lg-5">
+              <div class="contact-box h-100">
+                <p><i class="fa-brands fa-whatsapp me-2 text-accent" aria-hidden="true"></i><strong>WhatsApp:</strong> (12) 98274-1774</p>
+                <p><i class="fa-solid fa-location-dot me-2 text-accent" aria-hidden="true"></i><strong>Endereço:</strong> R. Inácio Caetano, 480 - Sala 206, Campos do Jordão - SP, 12467-054</p>
+                <p class="mb-0"><i class="fa-solid fa-id-card me-2 text-accent" aria-hidden="true"></i><strong>CRO:</strong> CRO159674</p>
               </div>
             </div>
+
+            <div class="col-12 col-lg-7">
+              <form id="whatsapp-form" class="contact-box" novalidate>
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" name="nome" required />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="tel" class="form-control" id="telefone" name="telefone" required />
+                  </div>
+                  <div class="col-12">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary">
+                      <i class="fa-brands fa-whatsapp me-2" aria-hidden="true"></i>Enviar no WhatsApp
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-
         </div>
+      </section>
+    </main>
+
+    <a
+      class="whatsapp-fab"
+      href="https://wa.me/5512982741774?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Abrir conversa no WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+    </a>
+
+    <footer class="py-4 border-top bg-white">
+      <div class="container text-center">
+        <small>© <span id="current-year"></span> Dra. Gabriela Helen • CRO159674 • Campos do Jordão - SP</small>
       </div>
-    </section>
+    </footer>
 
-    <!-- SOBRE -->
-    <section id="sobre" class="section-spacing">
-      <div class="container">
-        <h2 class="section-title">Sobre</h2>
-        <p>
-          A <strong>Dra. Gabriela Helen</strong> é Cirurgiã Dentista (CRO159674),
-          dedicada a oferecer atendimento humanizado e personalizado,
-          unindo técnica e cuidado em cada consulta.
-        </p>
-      </div>
-    </section>
-
-    <!-- LOCAL -->
-    <section id="local" class="section-spacing bg-light">
-      <div class="container">
-        <h2 class="section-title">Local</h2>
-        <p>
-          <strong>Endereço:</strong>
-          R. Inácio Caetano, 480 - Sala 206, Campos do Jordão - SP
-        </p>
-
-        <div class="map-wrapper rounded-4 overflow-hidden shadow-sm">
-          <iframe
-            src="https://www.google.com/maps?q=R.%20Inácio%20Caetano%20480%20Campos%20do%20Jordão&output=embed"
-            loading="lazy"
-            style="border:0;"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="section-spacing">
-      <div class="container">
-        <h2 class="section-title">Contato</h2>
-
-        <p>
-          <i class="fa-brands fa-whatsapp me-2 text-accent"></i>
-          WhatsApp: (12) 98274-1774
-        </p>
-      </div>
-    </section>
-
-  </main>
-
-  <!-- BOTÃO FLUTUANTE -->
-  <a class="whatsapp-fab"
-    href="https://wa.me/5512982741774?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta."
-    target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-  </a>
-
-  <!-- FOOTER -->
-  <footer class="py-4 border-top bg-white text-center">
-    <small>
-      © <span id="current-year"></span> Dra. Gabriela Helen • CRO159674 • Campos do Jordão - SP
-    </small>
-  </footer>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="scripts.js"></script>
-
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts.js"></script>
+  </body>
 </html>
