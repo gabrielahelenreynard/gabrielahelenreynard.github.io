@@ -113,6 +113,13 @@
     .menu a:hover { color: var(--primary); }
     .cta-nav, .btn, .btn-secondary { border-radius: 999px; padding: 14px 22px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; font-weight: 700; transition: .25s ease; }
     .cta-nav, .btn { background: linear-gradient(135deg, var(--primary), var(--primary-2)); color: white; box-shadow: 0 14px 28px rgba(15,76,129,.20); }
+
+    /* WhatsApp CTA verde */
+    a[href*="wa.me"].btn,
+    a[href*="wa.me"].cta-nav {
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      box-shadow: 0 14px 28px rgba(37,211,102,.25);
+    }
     .btn-secondary { background: white; border: 1px solid var(--line); color: var(--text); }
     .btn:hover, .cta-nav:hover, .btn-secondary:hover { transform: translateY(-1px); }
     .mobile-toggle { display: none; }
